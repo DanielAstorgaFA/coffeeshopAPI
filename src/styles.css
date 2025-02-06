@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('../src/assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    min-height: 100vh;
+}
+
+@media (max-width: 1200px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      display: block;
+    }
+  }

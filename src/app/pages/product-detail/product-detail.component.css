@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h5{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-shadow: 1px 0px rgb(165, 164, 163);
+}
+
+img{
+    border-radius: 2%;
+    border: 5px solid rgb(171, 107, 24);
+}

@@ -1,0 +1,18 @@
+<div class="container" id="big-home-container">
+    <h1 id="patata">¿Te apetece un cafelito?</h1>
+    <div id="home-container">
+        <section id="card-container" class="container mt-5 row m-1">
+            @for (product of productList; track $index) {
+            <div class="card shadow-lg rounded-lg col-12 col-sm-6 col-md-4 col-lg-3" id="tarjetas">
+                <img [src]="product.image" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.title}}</h5>
+                    <p class="card-text">{{product.description}}</p>
+                    <td><button type="button" class="btn btn-outline-primary"
+                            (click)="navegate(product.id)">Detalles</button></td>
+                </div>
+            </div>
+            }
+        </section>
+    </div>
+</div>
