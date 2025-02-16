@@ -3,12 +3,21 @@ import { CommonModule } from '@angular/common';
 import { ApiService } from '../../services/api.service';
 import { IProduct } from '../../models/product.model';
 import { Router } from '@angular/router';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
     selector: 'app-products',
     imports: [CommonModule],
     templateUrl: './products.component.html',
-    styleUrl: './products.component.css'
+    styleUrl: './products.component.css',
+    animations: [
+        trigger('fadeIn', [
+          transition(':enter', [
+            style({ opacity: 0 }),
+            animate('1.5s ease-out', style({ opacity: 1 }))
+          ])
+        ])
+      ]
 })
 export class ProductsComponent implements OnInit {
 

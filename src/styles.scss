@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+
+html,
+body {
+  font-family: var(--md-ref-typeface-plain, 'Roboto', sans-serif);
+}
+
+body {
+  background: linear-gradient(135deg, #3E2723, #795548, #D7CCC8);
+  min-height: 100vh;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: block;
+  }
+}

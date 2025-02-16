@@ -1,5 +1,5 @@
 <div class="container">
-    <form [formGroup]="contactForm" class="row g-3 needs-validation" novalidate (submit)="enviar($event)">
+    <form @fadeIn [formGroup]="contactForm" class="row g-3 needs-validation" novalidate (submit)="enviar($event)">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email </label>
             <input type="email" 
